@@ -13,7 +13,7 @@ import org.junit.Test;
 public class Run {
 
     @Test
-    // 执行 start() 方法顺序不达标线程启动的顺序
+    // 执行 start() 方法无序
     public void myTest(){
         MyThread myThread1 = new MyThread(1);
         MyThread myThread2 = new MyThread(2);
