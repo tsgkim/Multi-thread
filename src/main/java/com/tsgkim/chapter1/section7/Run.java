@@ -1,13 +1,14 @@
-package com.tsgkim.chapter1.section6;
+package com.tsgkim.chapter1.section7;
 
 import org.junit.Test;
 
 /**
  * Study:
  *
+ *
  * @Description:
  * @author: shiguang.tu
- * @create: 17/10/21 上午9:59
+ * @create: 17/10/24 下午11:59
  **/
 public class Run {
 
