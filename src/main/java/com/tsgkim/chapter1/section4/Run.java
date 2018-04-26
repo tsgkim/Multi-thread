@@ -12,12 +12,12 @@ import org.junit.Test;
  **/
 public class Run {
 
-    @Test
     /*
         Thread implements Runnable
         Thread 构造方法中 可传入 Runnable 对象
         ==》可以将一个 Thread 对象中的 run() 方法交由其它线程进行调用
      */
+    @Test
     public void myTest() {
         Runnable runnable = new MyRunnable();
         Thread thread1 = new Thread(runnable);

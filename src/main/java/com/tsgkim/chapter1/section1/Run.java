@@ -12,9 +12,8 @@ import org.junit.Test;
  **/
 public class Run {
 
-    @Test
     // 有可能先打印 运行结束  再打印 MyThread
-
+    @Test
     public void myRun() {
         MyThread myThread = new MyThread();
 

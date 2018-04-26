@@ -11,7 +11,7 @@ package com.tsgkim.chapter1.section3;
  **/
 public class MyThread extends Thread{
 
-    private  int i;
+    private int i;
 
     public MyThread(int i) {
         this.i = i;

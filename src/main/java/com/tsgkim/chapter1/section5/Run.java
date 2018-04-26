@@ -21,5 +21,10 @@ public class Run {
         myThread1.start();
         myThread2.start();
         myThread3.start();
+
+        // 通过测试发现 线程名称在 start() 中有效， 在 run() 中无效
+        myThread1.run();
+        myThread2.run();
+        myThread3.run();
     }
 }
