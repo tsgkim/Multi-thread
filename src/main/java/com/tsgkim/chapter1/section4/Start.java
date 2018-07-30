@@ -10,7 +10,7 @@ import org.junit.Test;
  * @author: shiguang.tu
  * @create: 17/10/21 上午12:11
  **/
-public class Run {
+public class Start {
 
     /*
         Thread implements Runnable

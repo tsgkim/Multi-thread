@@ -10,7 +10,7 @@ import org.junit.Test;
  * @author: shiguang.tu
  * @create: 17/10/20 上午12:03
  **/
-public class Run {
+public class Start {
 
     // 执行 start() 方法无序
     @Test

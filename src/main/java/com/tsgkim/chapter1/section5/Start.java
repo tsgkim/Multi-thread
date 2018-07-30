@@ -9,7 +9,7 @@ import org.junit.Test;
  * @author: shiguang.tu
  * @create: 17/10/21 上午12:44
  **/
-public class Run {
+public class Start {
 
     // 线程变量不共享
     @Test

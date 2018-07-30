@@ -10,7 +10,7 @@ import org.junit.Test;
  * @author: shiguang.tu
  * @create: 17/10/24 下午11:59
  **/
-public class Run {
+public class Start {
 
     // 非线程安全的共享变量
     @Test

@@ -1,6 +1,6 @@
 package com.tsgkim.chapter1.section8;
 
-public class Run {
+public class Start {
 
     /**
      * 测试发现，需要执行 main 方法才能看出执行效果，@Test 无法看出效果
