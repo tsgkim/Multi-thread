@@ -11,8 +11,11 @@ import org.junit.Test;
  **/
 public class Run {
 
+    /**
+     * 非线程安全的共享变量
+     * 有可能出现两个线程同时处理同一个变量值的情况
+     */
     @Test
-    // 非线程安全的共享变量
     public void myTest() {
         MyThread myThread = new MyThread();
         Thread a = new Thread(myThread, "A");

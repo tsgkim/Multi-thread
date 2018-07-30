@@ -2,6 +2,7 @@ package com.tsgkim.chapter1.test;
 
 import org.junit.Test;
 
+import java.io.UnsupportedEncodingException;
 import java.util.Vector;
 import java.util.concurrent.CountDownLatch;
 
@@ -37,7 +38,6 @@ public class TestCountDownLatch {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
     }
 
 }

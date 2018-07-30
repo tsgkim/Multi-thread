@@ -12,8 +12,8 @@ import org.junit.Test;
  **/
 public class Run {
 
-    @Test
     // 非线程安全的共享变量
+    @Test
     public void myTest() {
         MyThread myThread = new MyThread();
         Thread a = new Thread(myThread, "A");
