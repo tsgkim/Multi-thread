@@ -8,6 +8,7 @@ package com.tsgkim.chapter1.section7;
  * @create: 17/10/24 下午11:52
  **/
 public class MyThread extends Thread {
+
     private int count = 5;
 
     @Override
@@ -23,7 +24,9 @@ public class MyThread extends Thread {
         synchronized 可以在任意对象及方法上加锁，加锁代码称之为 互斥区 或 临界区
      */
     synchronized public void run() {
+
         count--;
         System.out.println("由" + this.currentThread().getName() + "计算，count=" + count);
+
     }
 }

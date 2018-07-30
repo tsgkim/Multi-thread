@@ -17,6 +17,7 @@ public class Run {
      */
     @Test
     public void myTest() {
+
         MyThread myThread = new MyThread();
         Thread a = new Thread(myThread, "A");
         Thread b = new Thread(myThread, "B");
@@ -27,5 +28,6 @@ public class Run {
         b.start();
         c.start();
         d.start();
+
     }
 }

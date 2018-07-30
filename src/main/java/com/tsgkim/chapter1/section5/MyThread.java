@@ -19,7 +19,7 @@ public class MyThread extends Thread {
     public void run() {
         while (count > 0) {
             count--;
-            System.out.println("由" + this.currentThread().getName() + "计算，count=" + count);
+            System.out.println("由" + currentThread().getName() + "计算，count=" + count);
         }
     }
 }
