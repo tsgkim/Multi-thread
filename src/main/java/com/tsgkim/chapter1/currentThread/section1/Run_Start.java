@@ -10,15 +10,41 @@ import org.junit.Test;
 public class Run_Start {
 
     @Test
-    public void myTest(){
+    public void testRun(){
 
         MyThread myThread = new MyThread();
 
         // .run() 也是被 main 线程调用
-        //myThread.run();
+        myThread.run();
+
+    }
+
+    @Test
+    public void testStart(){
+
+        MyThread myThread = new MyThread();
 
         // .start() 另外起一个 Thread-0 线程调用
         myThread.start();
+
+    }
+
+    @Test
+    public void testStart2(){
+
+        MyThread myThread = new MyThread();
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        // .start() 另外起一个 Thread-0 线程调用
+        myThread.start();
+
+        System.out.println(Thread.currentThread().getName());
+        System.out.println(myThread.currentThread().getName());
 
     }
 

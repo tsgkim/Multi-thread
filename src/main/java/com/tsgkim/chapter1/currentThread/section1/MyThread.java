@@ -13,6 +13,6 @@ public class MyThread extends Thread {
 
     @Override
     public void run() {
-        System.out.println(String.format("Run_Start method print thread name = %s", currentThread().getName()));
+        System.out.println(String.format("Run method print thread name = %s", currentThread().getName()));
     }
 }
