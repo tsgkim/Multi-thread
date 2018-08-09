@@ -14,7 +14,7 @@ public class Start1 {
      *      测试当前线程是否已经中断。线程的中断状态由该方法清除，如果连续两次调用该方法，则第二次调用将返回 false (第一次调用已清除了
      *  其中断状态之后，且第二次调用检验完中断状态前，当前线程再次中断的情况除外)
      *
-     *  这个例子，两次都打印 false，interrupted 判断的当前线程是 main，它从未中断过，所以打印结果是两个 false
+     *  这个例子，两次都打印 false，interrupted() 判断的当前线程是 main，它从未中断过，所以打印结果是两个 false
      *
      */
     public static void main(String[] args) {

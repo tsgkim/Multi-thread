@@ -22,22 +22,20 @@ public class LoginServlet {
     // synchronized public static void doPost(String userName, String password, String threadName) {
     public static void doPost(String userName, String password, String threadName) {
 
-        try {
+        userNameRef = userName;
 
-            userNameRef = userName;
-
-            if (CHECK_USER_NAME_FLAG.equals(userName)) {
+        if (CHECK_USER_NAME_FLAG.equals(userName)) {
+            try {
                 Thread.sleep(5000);
+            } catch (Exception e){
+                e.printStackTrace();
             }
-
-            passwordRef = password;
-
-            System.out.println(String.format("userNameRef = %s, passwordRef = %s, threadName = %s",
-                    userNameRef, passwordRef, threadName));
-
-        } catch (Exception e) {
-            e.printStackTrace();
         }
+
+        passwordRef = password;
+
+        System.out.println(String.format("userNameRef = %s, passwordRef = %s, threadName = %s",
+                userNameRef, passwordRef, threadName));
 
 
     }

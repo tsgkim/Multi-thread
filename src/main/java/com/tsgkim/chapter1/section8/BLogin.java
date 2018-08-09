@@ -1,5 +1,10 @@
 package com.tsgkim.chapter1.section8;
 
+/**
+ * 
+ * @author: shiguang.tu
+ * @create: 2018/8/9 上午12:16
+ */
 public class BLogin extends Thread{
 
     @Override

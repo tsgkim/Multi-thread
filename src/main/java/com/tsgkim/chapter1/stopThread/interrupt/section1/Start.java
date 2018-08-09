@@ -10,7 +10,9 @@ import org.junit.Test;
  */
 public class Start {
 
-    // interrupt() 方法仅仅是在当前线程中打了一个停止的标记，并不是真正停止线程
+    /**
+     * interrupt() 方法仅仅是在当前线程中打了一个停止的标记，并不是真正停止线程
+     */
     @Test
     public void myTest() {
 

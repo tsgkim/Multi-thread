@@ -28,7 +28,7 @@ public class MyThread extends Thread {
 
             }
 
-            // 如果 for 下面还有代码，还会继续执行，如果不然其执行，需要手动在 for 里面抛异常解决
+            // 如果 for 下面还有代码，还会继续执行，如果不然其执行，可以手动在 for 里面抛异常解决
             System.out.println("我是 for 下面继续运行的代码，线程并未停止");
 
         } catch (InterruptedException e) {

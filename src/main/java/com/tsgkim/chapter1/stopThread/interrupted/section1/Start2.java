@@ -1,7 +1,5 @@
 package com.tsgkim.chapter1.stopThread.interrupted.section1;
 
-import com.tsgkim.chapter1.stopThread.MyThread;
-
 /**
  *
  * @author: shiguang.tu
