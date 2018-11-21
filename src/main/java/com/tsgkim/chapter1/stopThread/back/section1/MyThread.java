@@ -1,5 +1,7 @@
 package com.tsgkim.chapter1.stopThread.back.section1;
 
+import org.junit.Test;
+
 /**
  *
  * @author: shiguang.tu
@@ -29,6 +31,23 @@ public class MyThread extends Thread {
         // 如果 for 下面还有代码，还会继续执行，如果不然其执行，可以手动在 for 里面 return 解决
         System.out.println("我是 for 下面继续运行的代码，线程并未停止");
 
+    }
+
+    @Test
+    public void myTest(){
+
+        MyThread myThread = new MyThread();
+
+        myThread.start();
+
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        myThread.interrupt();
 
     }
+
 }
