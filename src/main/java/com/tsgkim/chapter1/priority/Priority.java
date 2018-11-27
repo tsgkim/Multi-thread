@@ -15,12 +15,6 @@ public class Priority {
 
         for (int i = 0; i < 10; i++) {
 
-            //try {
-            //    Thread.sleep(1000);
-            //} catch (InterruptedException e) {
-            //    e.printStackTrace();
-            //}
-
             for (int j = 0; i < 50000; i++) {
 
                 Random random = new Random();
@@ -36,7 +30,7 @@ public class Priority {
     }
 
     public static void main(String[] args) {
-        
+
         for (int i = 0; i < 100; i++) {
 
             Thread thread1 = new Thread(Priority::myRun);
