@@ -3,7 +3,6 @@ package com.tsgkim.chapter3.join;
 import org.junit.Test;
 
 /**
- *
  * @author: shiguang.tu
  * @create: 2018/11/29 9:41 AM
  */
