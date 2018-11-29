@@ -38,6 +38,12 @@
             <version>2.0.0-SNAPSHOT</version>
         </dependency>
 
+        <dependency>
+            <groupId>me.andpay.ti</groupId>
+            <artifactId>ti-util</artifactId>
+            <version>1.1.0-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
 
