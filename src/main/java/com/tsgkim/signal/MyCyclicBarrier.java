@@ -6,6 +6,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.ThreadLocalRandom;
@@ -36,6 +38,8 @@ public class MyCyclicBarrier {
             System.out.println("乘客到达时间如下：");
 
         });
+
+        ExecutorService executorService1 = Executors.newCachedThreadPool();
 
         ScheduledExecutorService executorService = new ScheduledThreadPoolExecutor(10,
                 new BasicThreadFactory.Builder().namingPattern("example-schedule-pool-%d").daemon(false).build());
