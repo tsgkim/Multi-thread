@@ -1,4 +1,4 @@
-package com.tsgkim.signal;
+package com.tsgkim.threadPool;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 
@@ -29,6 +29,8 @@ public class MyCyclicBarrier {
 
             busCounter.getAndIncrement();
 
+            busCounter.getAndSet(busCounter.get() + 1);
+
             System.out.println("**********************");
 
             System.out.println(String.format("第%s辆大巴于%s发车",
@@ -44,7 +46,7 @@ public class MyCyclicBarrier {
                 200,
                 0L,
                 TimeUnit.MILLISECONDS,
-                new LinkedBlockingQueue<>(1024),
+                new LinkedBlockingQueue<Runnable>(1024),
                 new ThreadFactoryBuilder().setNameFormat("demo-pool-%d").build(),
                 new ThreadPoolExecutor.AbortPolicy());
 
