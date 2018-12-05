@@ -20,7 +20,8 @@ public class Test2 {
     }
 
     /**
-     * DCL（Double-Checked Locking） 双重检查锁 ：volatile 设置 test2 内存可见性，synchronized 同步 new 对象
+     * DCL（Double-Checked Locking） 双重检查锁 ：两次 if 空判断
+     * volatile 设置 test2 内存可见性，synchronized 同步 new 对象
      */
     public static Test2 getInstance() {
 
