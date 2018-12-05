@@ -1,4 +1,4 @@
-package com.tsgkim.singleton;
+package com.tsgkim.timer;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  * @author: shiguang.tu
  * @create: 2018/12/5 11:14 AM
  */
-public class Test3 {
+public class Test2 {
 
     private static ConcurrentLinkedQueue<Integer> queue = new ConcurrentLinkedQueue<>();
     private static ConcurrentHashMap<Integer, String> values = new ConcurrentHashMap<>();
@@ -111,7 +111,7 @@ public class Test3 {
         System.out.println("消费者开始消费");
 
         for (int i = 0; i < 50; i++) {
-            new Thread(Test3::myCustomer).start();
+            new Thread(Test2::myCustomer).start();
         }
 
         Thread.sleep(2000);
@@ -122,8 +122,8 @@ public class Test3 {
 
         System.out.println(String.format("%s 取出了 %s 个数，总和为 %s",
                 date,
-                Test3.countNumberByTime(date),
-                Test3.countValueByTime(date)));
+                Test2.countNumberByTime(date),
+                Test2.countValueByTime(date)));
 
     }
 
