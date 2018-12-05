@@ -89,8 +89,6 @@ public class Test2 {
 
     public static void main(String[] args) throws InterruptedException {
 
-        Timer timer = new Timer();
-
         TimerTask timerTask = new TimerTask() {
 
             @Override
@@ -104,7 +102,7 @@ public class Test2 {
 
         };
 
-        timer.schedule(timerTask, 0, 1000);
+        new Timer().schedule(timerTask, 0, 1000);
 
         Thread.sleep(3000);
 
